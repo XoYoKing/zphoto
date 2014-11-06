@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    android:background="@color/album_ui_bg" >
+
+    <GridView
+        android:id="@+id/media_in_folder_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="@dimen/thumb_width"
+        android:gravity="center"
+        android:horizontalSpacing="2.0dip"
+        android:listSelector="@drawable/mm_trans"
+        android:numColumns="auto_fit"
+        android:paddingTop="1.0dip"
+        android:verticalSpacing="2.0dip" />
+
+    <TextView
+        android:id="@+id/album_tips_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gallery_folder_mgr_height"
+        android:background="@color/half_alpha_black"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/SmallPadding"
+        android:paddingRight="@dimen/SmallPadding"
+        android:textColor="@color/action_bar_tittle_color_selector"
+        android:textSize="@dimen/NormalTextSize"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/album_footer_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/SmallListHeight"
+        android:layout_gravity="bottom"
+        android:background="@color/navpage"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/media_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/LargePadding"
+            android:paddingRight="@dimen/LargePadding" >
+
+            <TextView
+                android:id="@+id/media_folder_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallery_folder"
+                android:textColor="@color/black_btn_text_color"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/BasicPaddingSize"
+                android:background="@null"
+                android:paddingTop="@dimen/SmallPadding"
+                android:src="@drawable/title_icon_selector" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/holder"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <View
+            android:id="@+id/footer_line"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/gallery_bottom_devider_color" />
+
+        <TextView
+            android:id="@+id/media_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:enabled="false"
+            android:gravity="center"
+            android:minWidth="64.0dip"
+            android:paddingLeft="@dimen/LargePadding"
+            android:paddingRight="@dimen/LargePadding"
+            android:text="@string/gallery_pic_preview"
+            android:textColor="@color/black_btn_text_color"
+            android:textSize="@dimen/NormalTextSize" />
+    </LinearLayout>
+
+</FrameLayout>

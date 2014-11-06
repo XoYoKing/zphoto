@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mm_listitem"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/BasicPaddingSize"
+    android:paddingTop="@dimen/SmallPadding" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/gallery_folder_item_album_height"
+        android:layout_height="@dimen/gallery_folder_item_album_height"
+        android:layout_marginRight="@dimen/NormalPadding" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/pic_thumb_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/folder_thumb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sentpic_album_bg"
+            android:src="@drawable/pic_thumb_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/folder_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingRight="@dimen/BasicPaddingSize"
+            android:text="@string/app_name"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/NormalTextSize" />
+
+        <TextView
+            android:id="@+id/folder_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/BasicPaddingSize"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/BasicPaddingSize"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/SmallestTextSize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/folder_selected_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/LargePadding"
+        android:src="@drawable/round_selector_checked" />
+
+</LinearLayout>

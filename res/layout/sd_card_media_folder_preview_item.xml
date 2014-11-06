@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+ 
+
+    <ImageView
+        android:id="@+id/media_thumb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/media_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/half_alpha_black" />
+
+    <ImageView
+        android:id="@+id/media_cbx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/LittlePadding"
+        android:layout_marginTop="@dimen/LittlePadding"
+        android:src="@drawable/mm_checkbox_btn_grey"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>
