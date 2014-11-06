@@ -46,6 +46,12 @@ public class FolderItem extends MediaObject implements Parcelable {
 		mDisplayName = name;
 	}
 	
+	public FolderItem(String name,boolean selected) {
+		mBucketId =  NEW_FOLDER_ID;
+		mDisplayName = name;
+		mSelected = selected;
+	}
+	
 	/**
 	 * {@link Parcel} to create a folder items.
 	 * @param in {@link Parcel}

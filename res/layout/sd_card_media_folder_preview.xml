@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/NavPage"
-    android:background="@color/album_ui_bg" >
+    style="@style/NavPage">
 
     <GridView
         android:id="@+id/media_in_folder_gv"
@@ -35,7 +34,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/SmallListHeight"
         android:layout_gravity="bottom"
-        android:background="@color/navpage"
+        android:background="@color/action_bar_alpha_color"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 

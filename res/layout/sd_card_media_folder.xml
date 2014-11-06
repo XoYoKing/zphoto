@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/album_ui_bg"
-    android:scrollbars="none" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dip"
+        android:background="@color/list_devider_color"
         android:orientation="vertical" >
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/BasicPaddingSize" />
-
-        <com.tencent.mm.ui.base.MMGridView
+        <ListView
             android:id="@+id/media_lv"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="@null"
+            android:layout_height="wrap_content"
             android:cacheColorHint="#00000000"
-            android:horizontalSpacing="@dimen/BasicPaddingSize"
-            android:numColumns="2"
             android:paddingLeft="@dimen/BasicPaddingSize"
-            android:paddingRight="@dimen/BasicPaddingSize"
-            android:scrollbars="none"
-            android:stretchMode="columnWidth"
-            android:verticalSpacing="@dimen/BasicPaddingSize" />
+            android:paddingRight="@dimen/BasicPaddingSize" />
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
