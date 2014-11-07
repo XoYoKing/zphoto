@@ -5,6 +5,7 @@ import java.util.List;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -42,13 +43,14 @@ public class FolderItemPopupWindow implements OnItemClickListener{
     	listView.setOnItemClickListener(this);
     	
     	popupWindow=new PopupWindow(view,LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+    	popupWindow.setAnimationStyle(R.style.animationPopup);
     	popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
     
     
-    public void showAsDropDown(View view){
+    public void show(View view){
     	if(folderList.size()>0)
-    	    popupWindow.showAsDropDown(view, 0,3);
+    		popupWindow.showAtLocation(view, Gravity.BOTTOM, 0,0);
 	    	// 使其聚集
 			popupWindow.setFocusable(true);
 			// 设置允许在外点击消失

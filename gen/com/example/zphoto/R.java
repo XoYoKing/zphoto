@@ -8,47 +8,54 @@
 package com.example.zphoto;
 
 public final class R {
+    public static final class anim {
+        public static final int dropup_down=0x7f040000;
+        public static final int dropup_up=0x7f040001;
+        public static final int push_down_in=0x7f040002;
+        public static final int push_down_out=0x7f040003;
+        public static final int push_up_in=0x7f040004;
+    }
     public static final class attr {
     }
     public static final class bool {
-        public static final int device_orientation=0x7f040004;
-        public static final int support_exif_thumb=0x7f040003;
-        public static final int support_grid_folder=0x7f040002;
-        public static final int support_list_folder=0x7f040001;
-        public static final int support_simple_folder=0x7f040000;
+        public static final int device_orientation=0x7f050004;
+        public static final int support_exif_thumb=0x7f050003;
+        public static final int support_grid_folder=0x7f050002;
+        public static final int support_list_folder=0x7f050001;
+        public static final int support_simple_folder=0x7f050000;
     }
     public static final class color {
-        public static final int action_bar_alpha_color=0x7f060004;
-        public static final int action_bar_tittle_color=0x7f060003;
-        public static final int action_bar_tittle_color_selector=0x7f06000c;
-        public static final int album_ui_bg=0x7f060002;
-        public static final int black_btn_stroke_color_disable=0x7f060007;
-        public static final int black_btn_stroke_color_normal=0x7f060005;
-        public static final int black_btn_stroke_color_pressed=0x7f060006;
-        public static final int black_btn_text_color=0x7f06000d;
-        public static final int gallery_bottom_devider_color=0x7f060008;
-        public static final int half_alpha_black=0x7f060000;
-        public static final int hint_text_color=0x7f06000b;
-        public static final int list_devider_color=0x7f060009;
-        public static final int navpage=0x7f060001;
-        public static final int normal_text_color=0x7f06000a;
+        public static final int action_bar_alpha_color=0x7f070004;
+        public static final int action_bar_tittle_color=0x7f070003;
+        public static final int action_bar_tittle_color_selector=0x7f07000c;
+        public static final int album_ui_bg=0x7f070002;
+        public static final int black_btn_stroke_color_disable=0x7f070007;
+        public static final int black_btn_stroke_color_normal=0x7f070005;
+        public static final int black_btn_stroke_color_pressed=0x7f070006;
+        public static final int black_btn_text_color=0x7f07000d;
+        public static final int gallery_bottom_devider_color=0x7f070008;
+        public static final int half_alpha_black=0x7f070000;
+        public static final int hint_text_color=0x7f07000b;
+        public static final int list_devider_color=0x7f070009;
+        public static final int navpage=0x7f070001;
+        public static final int normal_text_color=0x7f07000a;
     }
     public static final class dimen {
-        public static final int BasicPaddingSize=0x7f070008;
-        public static final int LargePadding=0x7f070007;
-        public static final int LittlePadding=0x7f070002;
-        public static final int NormalPadding=0x7f07000a;
-        public static final int NormalTextSize=0x7f070005;
-        public static final int SmallListHeight=0x7f070006;
-        public static final int SmallPadding=0x7f070003;
-        public static final int SmallestTextSize=0x7f07000b;
+        public static final int BasicPaddingSize=0x7f080008;
+        public static final int LargePadding=0x7f080007;
+        public static final int LittlePadding=0x7f080002;
+        public static final int NormalPadding=0x7f08000a;
+        public static final int NormalTextSize=0x7f080005;
+        public static final int SmallListHeight=0x7f080006;
+        public static final int SmallPadding=0x7f080003;
+        public static final int SmallestTextSize=0x7f08000b;
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f070000;
-        public static final int activity_vertical_margin=0x7f070001;
-        public static final int gallery_folder_item_album_height=0x7f070009;
-        public static final int gallery_folder_mgr_height=0x7f070004;
-        public static final int thumb_width=0x7f07000c;
+        public static final int activity_horizontal_margin=0x7f080000;
+        public static final int activity_vertical_margin=0x7f080001;
+        public static final int gallery_folder_item_album_height=0x7f080009;
+        public static final int gallery_folder_mgr_height=0x7f080004;
+        public static final int thumb_width=0x7f08000c;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -66,29 +73,29 @@ public final class R {
         public static final int title_icon_selector=0x7f02000c;
     }
     public static final class id {
-        public static final int album_footer_bar=0x7f0a0003;
-        public static final int album_tips_bar=0x7f0a0002;
-        public static final int folder_count=0x7f0a000f;
-        public static final int folder_name=0x7f0a000e;
-        public static final int folder_selected_iv=0x7f0a0010;
-        public static final int folder_thumb=0x7f0a000d;
-        public static final int footer_line=0x7f0a0007;
-        public static final int holder=0x7f0a0006;
-        public static final int media_cbx=0x7f0a000c;
-        public static final int media_folder=0x7f0a0004;
-        public static final int media_folder_tv=0x7f0a0005;
-        public static final int media_in_folder_gv=0x7f0a0001;
-        public static final int media_lv=0x7f0a0000;
-        public static final int media_mask=0x7f0a000b;
-        public static final int media_preview=0x7f0a0008;
-        public static final int media_thumb=0x7f0a000a;
-        public static final int root_view=0x7f0a0009;
+        public static final int album_footer_bar=0x7f0b0003;
+        public static final int album_tips_bar=0x7f0b0002;
+        public static final int folder_count=0x7f0b000f;
+        public static final int folder_name=0x7f0b000e;
+        public static final int folder_selected_iv=0x7f0b0010;
+        public static final int folder_thumb=0x7f0b000d;
+        public static final int footer_line=0x7f0b0007;
+        public static final int holder=0x7f0b0006;
+        public static final int media_cbx=0x7f0b000c;
+        public static final int media_folder=0x7f0b0004;
+        public static final int media_folder_tv=0x7f0b0005;
+        public static final int media_in_folder_gv=0x7f0b0001;
+        public static final int media_lv=0x7f0b0000;
+        public static final int media_mask=0x7f0b000b;
+        public static final int media_preview=0x7f0b0008;
+        public static final int media_thumb=0x7f0b000a;
+        public static final int root_view=0x7f0b0009;
     }
     public static final class integer {
-        public static final int device_dpi=0x7f050003;
-        public static final int thumb_crop_size_h=0x7f050002;
-        public static final int thumb_crop_size_w=0x7f050001;
-        public static final int thumb_size=0x7f050000;
+        public static final int device_dpi=0x7f060003;
+        public static final int thumb_crop_size_h=0x7f060002;
+        public static final int thumb_crop_size_w=0x7f060001;
+        public static final int thumb_size=0x7f060000;
     }
     public static final class layout {
         public static final int sd_card_media_folder=0x7f030000;
@@ -97,13 +104,15 @@ public final class R {
         public static final int sd_card_medial_folder_item=0x7f030003;
     }
     public static final class string {
-        public static final int action_settings=0x7f080002;
-        public static final int app_name=0x7f080000;
-        public static final int gallery_folder=0x7f080003;
-        public static final int gallery_pic_preview=0x7f080004;
-        public static final int hello_world=0x7f080001;
+        public static final int action_settings=0x7f090002;
+        public static final int app_name=0x7f090000;
+        public static final int gallery_folder=0x7f090003;
+        public static final int gallery_pic_preview=0x7f090004;
+        public static final int hello_world=0x7f090001;
     }
     public static final class style {
-        public static final int NavPage=0x7f090000;
+        public static final int NavPage=0x7f0a0000;
+        public static final int UpMenuAnimation=0x7f0a0001;
+        public static final int animationPopup=0x7f0a0002;
     }
 }

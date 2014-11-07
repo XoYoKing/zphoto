@@ -149,45 +149,41 @@ public class MediaLoader {
 	 */
 	public static Bitmap getThumbnail(MediaItem item) {
 		Bitmap bm = null;
-    	
-    	if (item.getType() == MediaItem.IMAGE) {
-    		BitmapFactory.Options options = ImageConfig.getDefaultThumbOptions();
+		BitmapFactory.Options options = ImageConfig.getDefaultThumbOptions();
 
-    		Bitmap bitmap = null;
-    		
-    		if (ImageConfig.isExitfThumb()) {
-    			ExifInterface exif = null;
-                byte [] thumbData = null;
-                try {
-                    exif = new ExifInterface(item.getPath());
-                    if (exif != null) {
-                        thumbData = exif.getThumbnail();
-                    }
-                } catch (Throwable t) {
-                    Log.w("Bitmap", "fail to get exif thumb", t);
+		Bitmap bitmap = null;
+		
+		if (ImageConfig.isExitfThumb()) {
+			ExifInterface exif = null;
+            byte [] thumbData = null;
+            try {
+                exif = new ExifInterface(item.getPath());
+                if (exif != null) {
+                    thumbData = exif.getThumbnail();
                 }
-                
-                if (thumbData != null) {
-                    bitmap = decodeIfBigEnough(thumbData, options, ImageConfig.getThumbSize());
-                }
-    		}
-            
-    		if (bitmap == null) {
-    			bitmap = decodeThumbnail(item.getPath(), options, ImageConfig.getThumbSize());
-    		}
-            
-            if (bitmap == null) return null;
-
-            ImageItem imageItem = (ImageItem) item;
-            if (imageItem.isRotation()) {
-                bitmap = rotateBitmap(bitmap, imageItem.getRotation(), true);
+            } catch (Throwable t) {
+                Log.w("Bitmap", "fail to get exif thumb", t);
             }
             
-            bm = resizeAndCropCenter(bitmap, 
-            		ImageConfig.getThumbCropSizeWidth(), ImageConfig.getThumbCropSizeHight(), true);
+            if (thumbData != null) {
+                bitmap = decodeIfBigEnough(thumbData, options, ImageConfig.getThumbSize());
+            }
+		}
+        
+		if (bitmap == null) {
+			bitmap = decodeThumbnail(item.getPath(), options, ImageConfig.getThumbSize());
+		}
+        
+        if (bitmap == null) return null;
+
+        ImageItem imageItem = (ImageItem) item;
+        if (imageItem.isRotation()) {
+            bitmap = rotateBitmap(bitmap, imageItem.getRotation(), true);
+        }
+        
+        bm = resizeAndCropCenter(bitmap, 
+        		ImageConfig.getThumbCropSizeWidth(), ImageConfig.getThumbCropSizeHight(), true);
             
-    	} 
-    	
     	return bm;
 	}
 	

@@ -8,4 +8,14 @@
         <item name="android:layout_height">fill_parent</item>
     </style>
 
+    <style name="UpMenuAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dropup_up</item>
+        <item name="android:windowExitAnimation">@anim/dropup_down</item>
+    </style>
+
+    <style name="animationPopup">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
 </resources>

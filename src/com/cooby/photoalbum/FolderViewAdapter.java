@@ -69,9 +69,13 @@ public class FolderViewAdapter extends BaseAdapter{
 			listItemView = (ListItemView) convertView.getTag();
 		}
 		FolderItem item = listItems.get(position);
-		mediaManager.loadContentBitmap(item.childMedias.get(0), listItemView.folder_thumb);
+		listItemView.folder_count.setVisibility(View.GONE);
+		if(item.getItemCount()>0){
+			listItemView.folder_count.setVisibility(View.VISIBLE);
+			listItemView.folder_count.setText(item.getItemCount()+"");
+			mediaManager.loadContentBitmap(item.childMedias.get(0), listItemView.folder_thumb);			
+		}
 		listItemView.folder_name.setText(item.getDisplayName());
-		listItemView.folder_count.setText(item.getItemCount()+"");
 		listItemView.folder_selected_iv.setVisibility(View.GONE);
 		if(item.isSelected()){
 			listItemView.folder_selected_iv.setVisibility(View.VISIBLE);

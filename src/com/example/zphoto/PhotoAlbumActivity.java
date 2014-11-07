@@ -6,6 +6,7 @@ import java.util.List;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.GridView;
@@ -49,7 +50,7 @@ public class PhotoAlbumActivity extends Activity{
 						refreshItem(item.childMedias);
 					}
 				});
-				i.showAsDropDown(media_folder);
+				i.show(mGridView);;
 			}
 		});
 		initFolderItem();
